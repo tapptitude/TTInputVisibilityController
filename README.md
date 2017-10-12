@@ -4,17 +4,15 @@
 [![Twitter](https://img.shields.io/badge/Twitter-@Tapptitude-blue.svg?style=flat)](http://twitter.com/Tapptitude)
 
 ## About
-Lightweight controller to keep your inputs visible when the keyboard is up.
+Lightweight controller to keep your inputs visible when the keyboard is presented.
 
 This project is maintained by Tapptitude, a Product-Focused Mobile Development Agency based in Cluj-Napoca, Romania, and London, the UK, specialised in building high-quality Native Mobile Apps on iOS & Android. 
 
 
 ## Features:
-- Variable number of items 
-- Animated transition
-- Bounce animation
-- Fully configurable (color, gradient, shadow, corner radius)
-- Designable into Interface Builder
+- Very easy to integrate
+- Lightweight
+- Works with any inputs or keyboard types
 
 ## Requirements
 
