@@ -29,17 +29,6 @@ _Swift 4.0_
 pod 'TTInputVisibilityController'
 ```
 
-_Swift 3.X_
-
-```ruby
-pod 'TTInputVisibilityController', '~>0.3'
-```
-
-_Swift 2.x_
-```ruby
-pod 'TTInputVisibilityController', '0.1.1'
-```
-
 _Carthage_
 
 ```
@@ -48,7 +37,7 @@ github "tapptitude/TTInputVisibilityController"
 
 _Manually_
 
-Add the TTInputVisibilityController.swift file to your project.
+Add the contents of TTInputVisibilityController files to your project.
 
 ## Usage
 
