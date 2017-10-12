@@ -10,14 +10,13 @@ This project is maintained by Tapptitude, a Product-Focused Mobile Development A
 
 
 ## Features:
-- Very easy to integrate
-- Lightweight
+- Lightweight & very easy to integrate
 - Works with any inputs or keyboard types
 - Automatic keyboard dismiss when tapping outside of the input
 - Ignore views that trigger dimissal 
-- Add additional distance from the keyboard 
+- Custom additional distance from the keyboard 
 - Add any view to be visible
-- Add custom animation block when the keyboard is presented.
+- Custom animation block when the keyboard is presented.
 
 ## Requirements
 
