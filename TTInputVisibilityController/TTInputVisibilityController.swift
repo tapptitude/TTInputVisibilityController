@@ -201,7 +201,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func addKeyboardVisibilityController() -> TTInputVisibilityController {
+    public func addInputVisibilityController() -> TTInputVisibilityController {
         var keyboardController = self.keyboardVisibilityController
         
         if keyboardController == nil {

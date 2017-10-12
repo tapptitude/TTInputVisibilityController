@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addKeyboardVisibilityController()
+        self.view.addInputVisibilityController()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
