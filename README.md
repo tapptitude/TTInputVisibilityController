@@ -8,6 +8,9 @@ Lightweight controller to keep your inputs visible when the keyboard is presente
 
 This project is maintained by Tapptitude, a Product-Focused Mobile Development Agency based in Cluj-Napoca, Romania, and London, the UK, specialised in building high-quality Native Mobile Apps on iOS & Android. 
 
+![](Resources/example1.gif) \n
+![](Resources/example2.gif)
+
 
 ## Features:
 - Lightweight & very easy to integrate
