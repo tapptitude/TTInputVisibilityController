@@ -62,13 +62,15 @@ override func viewDidLoad() {
 
 You can add extra space above the keyboard by setting the  ```swift extraSpaceAboveKeyboard``` property. 
 
-### Additional animation block
+### Ignore views that trigger dimissal
 
 If you want some view to not trigger the dismissal of the keyboard(e.g. a login button) you can set
 
 ```swift 
 inputVisibilityController.dismissKeyboardTouchRecognizer?.ignoreViews = [myLoginButton] 
 ```
+
+### Additional animation block
 
 You can also add provide a block to be called when the keyboard is dismissed or presented providing you the tranlation value. (e.g animating somoe constraints)
 
