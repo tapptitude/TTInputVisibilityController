@@ -66,13 +66,11 @@ You can also add provide a block to be called when the keyboard is dismissed or 
 ```swift 
 
 inputVisibilityController.additionallAnimatioBlock = { [weak self] translation in
-    self?.loginButtonBottomConstraint.constant = initialConstraint + moveUpValue
+    self?.loginButtonBottomConstraint.constant = initialConstraint + translation
     self?.view.layoutIfNeeded()
 }
 
 ```
-
-
 
 ## Contribution
 
