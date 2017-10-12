@@ -48,6 +48,8 @@ Add the contents of TTInputVisibilityController files to your project.
 
 ## Usage
 
+### Add the controller directly to your view
+
 You can add the keyboardVisibilityController to the view proerty of any ViewController. 
 
 ```swift
@@ -56,7 +58,11 @@ override func viewDidLoad() {
     self.view.addInputVisibilityController()
 }
 ```
+### Custom space above the keyboard
+
 You can add extra space above the keyboard by setting the  ```swift extraSpaceAboveKeyboard``` property. 
+
+### Additional animation block
 
 If you want some view to not trigger the dismissal of the keyboard(e.g. a login button) you can set
 
