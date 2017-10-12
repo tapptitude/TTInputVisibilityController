@@ -23,7 +23,7 @@ This project is maintained by Tapptitude, a Product-Focused Mobile Development A
 
 _CocoaPods_
 
-_Swift 4.0_
+_Swift 4.0, 3.X_
 
 ```ruby
 pod 'TTInputVisibilityController'
