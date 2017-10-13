@@ -50,7 +50,7 @@ Add the contents of TTInputVisibilityController files to your project.
 
 ### Add the controller directly to your view
 
-You can add the keyboardVisibilityController to the view proerty of any ViewController. 
+You can add the keyboardVisibilityController to the view property of any ViewController. 
 
 ```swift
 override func viewDidLoad() {
@@ -72,7 +72,7 @@ inputVisibilityController.dismissKeyboardTouchRecognizer?.ignoreViews = [myLogin
 
 ### Additional animation block
 
-You can also add provide a block to be called when the keyboard is dismissed or presented providing you the tranlation value. (e.g animating somoe constraints)
+You can also provide a block to be called when the keyboard is dismissed or presented, providing you the translation value. (e.g animating some constraints)
 
 ```swift 
 
