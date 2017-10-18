@@ -8,6 +8,9 @@ Lightweight controller to keep your inputs visible when the keyboard is presente
 
 This project is maintained by Tapptitude, a Product-Focused Mobile Development Agency based in Cluj-Napoca, Romania, and London, the UK, specialised in building high-quality Native Mobile Apps on iOS & Android. 
 
+![](Resources/example1.gif) \n
+![](Resources/example2.gif)
+
 
 ## Features:
 - Lightweight & very easy to integrate
@@ -45,7 +48,9 @@ Add the contents of TTInputVisibilityController files to your project.
 
 ## Usage
 
-You can add the keyboardVisibilityController to the view proerty of any ViewController. 
+### Add the controller directly to your view
+
+You can add the keyboardVisibilityController to the view property of any ViewController. 
 
 ```swift
 override func viewDidLoad() {
@@ -53,7 +58,11 @@ override func viewDidLoad() {
     self.view.addInputVisibilityController()
 }
 ```
+### Custom space above the keyboard
+
 You can add extra space above the keyboard by setting the  ```swift extraSpaceAboveKeyboard``` property. 
+
+### Ignore views that trigger dimissal
 
 If you want some view to not trigger the dismissal of the keyboard(e.g. a login button) you can set
 
@@ -61,18 +70,18 @@ If you want some view to not trigger the dismissal of the keyboard(e.g. a login 
 inputVisibilityController.dismissKeyboardTouchRecognizer?.ignoreViews = [myLoginButton] 
 ```
 
-You can also add provide a block to be called when the keyboard is dismissed or presented providing you the tranlation value. (e.g animating somoe constraints)
+### Additional animation block
+
+You can also provide a block to be called when the keyboard is dismissed or presented, providing you the translation value. (e.g animating some constraints)
 
 ```swift 
 
 inputVisibilityController.additionallAnimatioBlock = { [weak self] translation in
-    self?.loginButtonBottomConstraint.constant = initialConstraint + moveUpValue
+    self?.loginButtonBottomConstraint.constant = initialConstraint + translation
     self?.view.layoutIfNeeded()
 }
 
 ```
-
-
 
 ## Contribution
 
