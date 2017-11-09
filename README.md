@@ -6,7 +6,7 @@
 ## About
 Lightweight controller to keep your inputs visible when the keyboard is presented.
 
-This project is maintained by Tapptitude, a Product-Focused Mobile Development Agency based in Cluj-Napoca, Romania, and London, the UK, specialised in building high-quality Native Mobile Apps on iOS & Android. 
+This project is maintained by Tapptitude, a mobile app development agency specialized in building high-quality iOS and Android mobile apps, for startups and brands alike. A lively team of skilled app developers and app designers based in Europe, we provide full-stack mobile app development services to entrepreneurs looking to innovate on mobile. 
 
 ![](Resources/example1.gif)<br/><br/><br/>
 ![](Resources/example2.gif)
