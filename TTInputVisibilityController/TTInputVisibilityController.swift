@@ -40,22 +40,22 @@ public class TTInputVisibilityController: NSObject {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillAppear),
-                                               name: .UIKeyboardWillShow,
+                                               name: UIResponder.keyboardWillShowNotification,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillDisappear),
-                                               name: .UIKeyboardWillHide,
+                                               name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(applicationWillResign),
-                                               name: .UIApplicationWillResignActive,
+                                               name: UIApplication.willResignActiveNotification,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillChangeFrame),
-                                               name: .UIKeyboardWillChangeFrame,
+                                               name: UIResponder.keyboardWillChangeFrameNotification,
                                                object: nil)
     }
     
@@ -89,7 +89,7 @@ public class TTInputVisibilityController: NSObject {
     }
     
     @objc func keyboardWillChangeFrame(notification: Notification) {
-        let keyboardEndFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+        let keyboardEndFrame = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
         let goingUp = (keyboardEndFrame?.origin.y ?? 0) < UIScreen.main.bounds.height
         self.moveViewUp(up: goingUp, usingKeyboardNotification: notification)
     }
@@ -100,7 +100,7 @@ public class TTInputVisibilityController: NSObject {
         }
         
         let userInfo = notification.userInfo!
-        let keyboardEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+        let keyboardEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
         
         var toBeVisibleView = self.toBeVisibleView
         
@@ -114,11 +114,11 @@ public class TTInputVisibilityController: NSObject {
         // the old way of animation will match the keyboard animation timing and curve
         if !self.disableKeyboardMoveUpAnimation {
             UIView.beginAnimations(nil, context: nil)
-            if let duration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? Double {
+            if let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double {
                 UIView.setAnimationDuration(duration)
             }
-            if let animationValue = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? Int {
-                if let animationCurve = UIViewAnimationCurve(rawValue: animationValue) {
+            if let animationValue = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int {
+                if let animationCurve = UIView.AnimationCurve(rawValue: animationValue) {
                     UIView.setAnimationCurve(animationCurve)
                 }
             }
